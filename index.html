@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffle Meltz - Artisanal Waffles</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-wrapper">
+                    <div class="logo-container">
+                        <img src="logo.jpg" alt="Waffle Meltz Logo" class="logo-image">
+                    </div>
+                    <div class="logo">Waffle Meltz</div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Crispy, Golden Waffles</h1>
+                <p class="hero-subtitle">Handcrafted with Love, Topped with Perfection</p>
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+            </div>
+            <div class="hero-image">
+                <img src="frontimg.png" alt="Delicious Golden Waffles">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Every bite is a delight</p>
+            </div>
+
+            <!-- Category Buttons -->
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="wafflelicious">
+                    Wafflelicious & Stick Waffles
+                </button>
+                <button class="category-btn" data-category="mini-pancake">
+                    Mini Pancake
+                </button>
+                <button class="category-btn" data-category="waffle-sundae">
+                    Waffle Sundae
+                </button>
+                <button class="category-btn" data-category="beverages">
+                    Beverages
+                </button>
+                <button class="category-btn" data-category="hot-fresh">
+                    Hot & Fresh
+                </button>
+                <button class="category-btn" data-category="special-cake">
+                    Special Waffle Cake
+                </button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-items-grid" id="menuItemsGrid">
+                <!-- Items will be dynamically loaded here -->
+            </div>
+            <div class="order-cta">
+                <a href="https://www.zomato.com/chennai/waffle-meltz-padur" class="order-now-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="ourstoryimg.png" alt="Waffle Making">
+                </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Waffle Meltz began with a simple idea: make waffles that speak for themselves. No noise, no gimmicks just flavors that feel right from the first bite.</p> 
+                    <p>We stick to what matters: fresh ingredients, careful craft, and a recipe that’s earned its place through patience and practice. Every waffle is made the way we believe food should be straightforward, honest, and worth coming back for.</p> 
+                    <p>Nothing fancy, nothing forced. Just a small team doing what they do best, one golden waffle at a time.</p>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Made Fresh to Order</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>100% Real Ingredients</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Pure ingredients Pure comfort</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mgvglzko" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Visit Us</h3>
+                        <p>JESEM FOOD STREET No 8, Ponnu Green Farms, Old Mamallapuram Rd<br>Padur, Kelambakkam, Chennai-603103<br>📍 <a href="https://l.instagram.com/?u=https%3A%2F%2Fmaps.app.goo.gl%2FwZUxBfNa6yw4tJ7d6%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnLUiktpLjlKrGa94jt81Tw8TtOZe5fu9gYAlkzLJzF4ogeUygcwDPIw_bhIY_aem_QQAg1gxx1ylbW6RNo5t8Fg&e=AT04Ab5lN0dRfOoIW_R1iPKWGMdy53oyWrv0wdoljYzfyQzekOYEzsxxArc5-w9txDOAuNt3iEFacetWS3RCei_fkJ2rP_U4xYtGhxPrutpR4y_pT0ZbDmAuuA">Google Map</a></p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Contact</h3>
+                        <p>Phone: +91 7824868139 / 9003236845<br>Email: <a href="mailto:wafflemeltz@gmail.com">wafflemeltz@gmail.com</a><br>Instagram: <a href="https://www.instagram.com/waffle_meltz/">Waffle_meltz </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Waffle Meltz. All rights reserved.</p>
+            <!--<div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>-->
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
