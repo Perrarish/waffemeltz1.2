@@ -39,7 +39,7 @@ const menuData = {
         { name: 'Cold Coffee', price: 139, image: 'coldcoffee.png' }
     ],
     'hot-fresh': [
-        { name: 'Brownie', price: 59, image: '/brownie.png' },
+        { name: 'Brownie', price: 59, image: 'brownie.png' },
         { name: 'Brownie with dark chocolate', price: 69, image: 'browniewithdarkchocolate.png' },
         { name: 'Garlic Bread', price: 89, image: 'garlicbread.png' },
         { name: 'Korean Cream Cheese Garlic Bun', price: 99, image: 'creamcheesgarlicbun.png' }
@@ -247,5 +247,6 @@ window.addEventListener('scroll', () => {
         
         lastScroll = currentScroll;
     }
+
 
 });
